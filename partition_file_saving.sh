@@ -3,7 +3,7 @@
 #sprawdzanie dysków
 available_disks=$(lsblk -o NAME,SIZE,TYPE | grep disk)
 
-#sprawdzanie partycji utworzonej podczas labolatorium
+#sprawdzanie partycji utworzonej podczas laboratorium
 part="/dev/vdb1"
 size=$(df -h | grep "$part")
 
